@@ -4,7 +4,7 @@ maintainer_email 'nrycar@chef.io'
 license 'All Rights Reserved'
 description 'Installs/Configures client_wrapper'
 long_description 'Installs/Configures client_wrapper'
-version '0.1.1'
+version '0.1.2'
 chef_version '>= 12.1' if respond_to?(:chef_version)
 
 # The `issues_url` points to the location where issues for this cookbook are

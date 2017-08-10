@@ -20,6 +20,7 @@ platforms:
     pid_one_command: /usr/lib/systemd/systemd
     intermediate_instructions:
       - RUN yum -y install lsof which systemd-sysv initscripts wget net-tools
+    privileged: true
 - name: ubuntu-14.04
   driver:
     image: ubuntu:14.04
@@ -27,3 +28,4 @@ platforms:
     intermediate_instructions:
       - RUN /usr/bin/apt-get update
       - RUN /usr/bin/apt-get install apt-transport-https lsb-release procps net-tools -y
+    privileged: true
